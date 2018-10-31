@@ -8,7 +8,9 @@ http
     response.writeHead(200, { "Content-Type": "text/plain" });
 
     // Send the response body as "Hello World"
-    response.end("Hello World. Ansible is awesome\n");
+    response.end(
+      "Ansible is a radically simple IT automation engine that automates cloud provisioning, configuration management, application deployment, intra-service orchestration, and many other IT needs.\n"
+    );
   })
   .listen(3000);
 
