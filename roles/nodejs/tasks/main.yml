@@ -1,0 +1,9 @@
+# tasks file for nodejs
+
+- name: Installing node and npm
+  yum:
+    enablerepo: epel
+    state: installed
+    name:
+      - nodejs
+      - npm
