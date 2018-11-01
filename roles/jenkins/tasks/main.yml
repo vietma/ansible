@@ -1,4 +1,14 @@
 # tasks file for jenkins
+- name: Check if java 1.7.0 is installed
+  shell: rpm -q java-1.7.0-openjdk
+  ignore_errors: yes
+  register: rpmq_result1.7.0
+- name: Ensure java 1.7.0 is removed
+  yum:
+    name: java-1.7.0-openjdk
+    state: removed
+  when: "rpmq_result1.7.0.rc != 0"
+
 - name: Import Jenkins GPG key
   rpm_key:
     state: present
