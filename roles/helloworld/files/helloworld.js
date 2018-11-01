@@ -8,7 +8,9 @@ http
     response.writeHead(200, { "Content-Type": "text/plain" });
 
     // Send the response body as "Hello World"
-    response.end("Ansible & CloudFormation integration is awesome\n");
+    response.end(
+      "Ansible & CloudFormation integration is awesome. Jenkins is great.\n"
+    );
   })
   .listen(3000);
 
