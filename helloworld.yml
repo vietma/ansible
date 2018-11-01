@@ -2,3 +2,6 @@
   become: yes
   roles:
     - helloworld
+    - git
+    - ansible
+    - cron

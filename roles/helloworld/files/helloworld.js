@@ -9,7 +9,7 @@ http
 
     // Send the response body as "Hello World"
     response.end(
-      "Ansible is a radically simple IT automation engine that automates cloud provisioning, configuration management, application deployment, intra-service orchestration, and many other IT needs.\n"
+      "Ansible is a radically simple IT automation engine that automates cloud provisioning & configuration management.\n"
     );
   })
   .listen(3000);

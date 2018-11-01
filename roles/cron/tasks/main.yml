@@ -1,0 +1,11 @@
+# tasks file for cron
+- name: Ensure an old cron job is no longer present
+  cron:
+    name: ansible_pull
+    state: absent
+- name: Create a cron job for ansible-pull
+  cron:
+    name: ansible_pull
+    user: ec2-user
+    minute: 5
+    job: "/usr/local/bin/ansible-pull -U https://github.com/vietma/ansible.git helloworld.yml -i localhost"
