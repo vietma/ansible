@@ -8,9 +8,7 @@ http
     response.writeHead(200, { "Content-Type": "text/plain" });
 
     // Send the response body as "Hello World"
-    response.end(
-      "Ansible is a radically simple IT automation engine that automates cloud provisioning.\n"
-    );
+    response.end("Ansible & CloudFormation integration is awesome\n");
   })
   .listen(3000);
 
