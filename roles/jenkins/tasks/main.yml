@@ -14,11 +14,11 @@
     gpgcheck: yes
 - name: Install Jenkins
   yum:
-    name: jenkins-2.149
+    name: jenkins
     enablerepo: jenkins
     state: present
 - name: Start Jenkins
   service:
-    name: jenkins-2.149
+    name: jenkins
     enabled: yes
     state: started
