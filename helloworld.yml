@@ -1,4 +1,7 @@
 - hosts: "{{ target | default('localhost') }}"
   become: yes
+  vars:
+    - playbookname: helloworld
   roles:
     - helloworld
+    - cron
