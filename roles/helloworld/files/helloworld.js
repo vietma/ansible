@@ -8,7 +8,7 @@ http
     response.writeHead(200, { "Content-Type": "text/plain" });
 
     // Send the response body as "Hello World"
-    response.end("ansible-pull is so powerful.\n");
+    response.end("Passing parameters to ansible roles is so helpful.\n");
   })
   .listen(3000);
 
