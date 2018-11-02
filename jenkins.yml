@@ -1,5 +1,8 @@
 - hosts: "{{ target | default('localhost') }}"
   become: yes
+  vars:
+    - playbookname: jenkins
   roles:
     - jenkins
     - nodejs
+    - cron
