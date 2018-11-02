@@ -7,5 +7,5 @@
   cron:
     name: ansible_pull
     user: ec2-user
-    minute: 10
+    minute: */10
     job: "/usr/local/bin/ansible-pull -U https://github.com/vietma/ansible.git helloworld.yml -i localhost"
