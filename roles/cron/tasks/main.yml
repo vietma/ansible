@@ -1,11 +1,11 @@
 # tasks file for cron
 - name: Ensure an old cron job for playbook {{ playbookname }} is no longer present
   cron:
-    name: { { playbookname } }
+    name: "{{ playbookname }}"
     state: absent
 - name: Create a cron job for playbook {{ playbookname }}
   cron:
-    name: { { playbookname } }
+    name: "{{ playbookname }}"
     user: ec2-user
     minute: "*/10"
     job: "/usr/local/bin/ansible-pull -U https://github.com/vietma/ansible.git {{ playbookname }}.yml -i localhost -o"
