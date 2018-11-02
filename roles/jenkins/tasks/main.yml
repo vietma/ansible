@@ -1,10 +1,5 @@
 # tasks file for jenkins
 
-- name: Ensure java 1.7.0 is removed
-  yum:
-    name: java-1.7.0-openjdk
-    state: removed
-
 - name: Import Jenkins GPG key
   rpm_key:
     state: present
