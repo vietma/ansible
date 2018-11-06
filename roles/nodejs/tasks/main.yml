@@ -3,7 +3,7 @@
 - name: Installing node and npm
   yum:
     enablerepo: epel
-    state: installed
+    state: latest
     name:
       - nodejs
       - npm
