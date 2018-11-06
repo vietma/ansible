@@ -1,9 +1,16 @@
 # tasks file for nodejs
 
-- name: Installing node and npm
+- name: Installing node
+  yum:
+    enablerepo: epel
+    state: present
+    releasever: 11.1.0
+    name:
+      - nodejs
+
+- name: Installing npm
   yum:
     enablerepo: epel
     state: latest
     name:
-      - nodejs
       - npm
