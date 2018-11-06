@@ -1,10 +1,11 @@
 # tasks file for nodejs
+- name: Download node 11 script
+  shell: "curl -sL https://rpm.nodesource.com/setup_11.x | sudo bash -"
 
 - name: Installing node
   yum:
     # enablerepo: epel
     state: present
-    releasever: 11.1.0
     name:
       - nodejs
 
