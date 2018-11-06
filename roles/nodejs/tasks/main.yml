@@ -1,6 +1,6 @@
 # tasks file for nodejs
 - name: Download node 11 script
-  shell: "curl -sL https://rpm.nodesource.com/setup_11.x | sudo bash -"
+  shell: "curl -sL https://rpm.nodesource.com/setup_10.x | sudo bash -"
 
 - name: Installing node
   yum:
