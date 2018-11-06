@@ -2,7 +2,7 @@
 
 - name: Installing node
   yum:
-    enablerepo: epel
+    # enablerepo: epel
     state: present
     releasever: 11.1.0
     name:
