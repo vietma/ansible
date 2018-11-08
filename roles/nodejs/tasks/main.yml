@@ -8,10 +8,9 @@
     state: present
     name:
       - nodejs
-
-- name: Installing npm
-  yum:
-    enablerepo: epel
-    state: present
-    name:
-      - npm
+#- name: Installing npm
+#  yum:
+#    enablerepo: epel
+#    state: present
+#    name:
+#      - npm
