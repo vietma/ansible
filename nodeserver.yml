@@ -3,3 +3,4 @@
   roles:
     - nodejs
     - codedeploy
+    - cron
