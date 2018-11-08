@@ -12,6 +12,6 @@
 - name: Installing npm
   yum:
     enablerepo: epel
-    state: latest
+    state: present
     name:
       - npm
