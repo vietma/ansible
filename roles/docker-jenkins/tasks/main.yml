@@ -1,1 +1,10 @@
 # tasks file for docker-jenkins
+- name: upgrade all packages
+  yum:
+    name: "*"
+    state: latest
+
+- name: Install Docker
+  yum:
+    name: docker
+    state: latest
